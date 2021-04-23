@@ -9,7 +9,7 @@ void gameover() {
     textSize(100);
     text("WIN!!", 400, 300);
   } else {
-    error.play();
+    lose.play();
     background(ocean);
     image(gameover[gameoverN], 150, 100, 500, 300);
     if (frameCount % 6 == 0) gameoverN = gameoverN + 1;

@@ -11,7 +11,7 @@ import ddf.minim.ugens.*;
 
 //sound varaibles
 Minim minim;
-AudioPlayer start, error, click, coin, win;
+AudioPlayer start, error, click, coin, win, lose;
 
 //mode 
 int mode;
@@ -71,6 +71,7 @@ void setup() {
   error = minim.loadFile("error.mp3");
   coin = minim.loadFile("coin.wav");
   win = minim.loadFile("win.mp3");
+  lose = minim.loadFile("lose.mp3");
 
   game = createFont("GameOn.ttf", 50);
 
